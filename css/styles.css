@@ -90,21 +90,24 @@ img {
 list-style: none;
     display: flex;
 justify-content: center;
+align-items: center;
 }
-.logo-links {
-display: flex;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-}
+
 .logo-icon {
 fill: var(--text-color);
+display: flex;
+margin-right: 10px;
+
 }
-.logo-links:hover,
-.logo-links:focus {
+
+.header-contacts:hover,
+.header-contacts:focus {
 color: var(--accent-color);
 }
-.logo-links:hover .logo-icon {
+.header-contacts:focus .logo-icon {
+  fill: var(--accent-color);
+} 
+.header-contacts:hover .logo-icon {
     fill: var(--accent-color);
 }
     
@@ -127,10 +130,15 @@ color: var(--accent-color);}
         padding-bottom: 32px;
         padding-top: 32px;
 }
-.nav-link:focus,
-.nav-link:hover {
+
+.header-contacts:focus .nav-link {
     color: var(--accent-color);
 }
+
+.header-contacts:hover .nav-link {
+    color: var(--accent-color);
+}
+
 /*-------------------Hero-------------*/
 .hero {
     background-color: #2F303A;
